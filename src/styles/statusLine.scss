@@ -1,0 +1,37 @@
+@import "properties.scss";
+.statusLine {
+    background: #4b79a1;
+    background: -webkit-linear-gradient( to right, #283e51, #4b79a1);
+    background: linear-gradient( to right, #283e51, #4b79a1);
+    border-radius: 10px;
+    width: 100%;
+    min-height: 200px;
+    margin: 0.4rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    // background-color: #b3b3b3;
+    justify-content: flex-start;
+    .addBtn {
+        border-radius: 10px;
+        background-color: #fff;
+        height: 40px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        border: none;
+        margin-bottom: 1rem;
+        color: #b3b3b3;
+        margin: 1rem;
+    }
+    h3 {
+        font-weight: 500;
+        margin: 1rem 0;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 75rem) {
+    .statusLine {
+        width: initial;
+        margin-bottom: 5rem;
+    }
+}
